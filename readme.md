@@ -80,7 +80,7 @@ _Change to the directory above.  The double dots means 'directory above'_
 _Print working directory ... the directory we are in now._
 
 
-** Make A New Directory**
+**Make A New Directory**
 > mkdir [new directory name]
 
 _Make a new directory in the directory that you are currently in._
@@ -92,7 +92,7 @@ _Make a new directory in the directory that you are currently in._
 _Copy the original file to a file named what you specify in "new file"_
 _File specifications can include whole directories too: "/my_folder/file.txt"_
 
-** Move **
+**Move**
 > mv [original file] [new file]
 
 _Much like cp, but doesn't copy the file into a new one, just moves it._
