@@ -6,6 +6,7 @@
 1. [Vocabulary](#vocabulary)
 1. [General commands \(for UNIX\)](#general-commands-for-unix)
 1. [Git commands](#git-commands)
+	1. [Help](#help)
 	1. [Setting up your local git program](#setting-up-your-local-git-program)
 	1. [Starting a Git Repository](#starting-a-git-repository)
 	1. [Adding files and Committing Changes](#adding-files-and-committing-changes)
@@ -20,9 +21,11 @@
 
 **Repository**
 	A log book for a captain
+	*The records and information that git keeps to track your changes and versions*
 
 **Commit**
 	How you put something in your diary - a single diary entry
+	*Tell git to log and record the changes made since the last entry*
 
 **Master**
 	The name for the default “universe”
@@ -110,6 +113,18 @@ _Using the "-r" flag is necessary for directories_
 
 
 ## Git commands
+
+### Help
+
+**General Help**
+
+> git help
+
+**Help for specific command**
+
+> git help [command]
+
+> git help commit
 
 ### Setting up your local git program
 
