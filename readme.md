@@ -15,6 +15,7 @@
 	1. [Advanced History Searching](#advanced-history-searching)
 	1. [Using your History](#using-your-history)
 		1. [Moving through Time](#moving-through-time)
+		1. [Changing History](#changing-history)
 	1. [Making and Using Branches](#making-and-using-branches)
 	1. [Syncing with GitHub](#syncing-with-github)
 
@@ -334,6 +335,7 @@ _Lets you look at your files as they were at this time, and run code if you need
 
 *Here, master is referring to the branch name.  If on another, you need to specify that branch*
 
+#### Changing History
 
 **Cancelling previous commits**
 
