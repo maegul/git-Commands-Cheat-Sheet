@@ -270,6 +270,22 @@ _Show the git log in a more concise form._
 _Shows differences between current uncommitted changes and those of the most recent commit_
 
 
+> git diff [path]
+
+_Shows differences only for file specified by path_
+
+
+>git diff [commit] [commit]
+
+_Shows differences between two specified locations in your history (including branches etc)_
+
+
+>git diff --word-diff
+
+
+_Show differences in terms of changes words, not changed lines_
+
+
 ### Advanced History Searching
 
 > git log --stat
@@ -284,11 +300,11 @@ _Shows differences between current uncommitted changes and those of the most rec
 
 > git blame [path]
 
-*Shows which commit was the last to affect each line of code*
+*Shows only the commits that affect the file defined by path*
 
 > git log -n x
 
-*limit the number of commits you see from your history*
+*limit the number of commits you see from your history to x*
 
 > git log [--after | --before] <date>
 
@@ -299,23 +315,23 @@ _Shows differences between current uncommitted changes and those of the most rec
 
 *Specify a time period of your history to look at*
 
-> git log --grep <pattern>
+> git log --grep [pattern]
 
 *pattern is in the message for the commit*
 
-> git log -S <pattern>
+> git log -S [pattern]
 
 *pattern has been added or deleted (in change log) in actual text*
 
-> git log -G <pattern>
+> git log -G [pattern]
 
 *Pattern occurs in change log in actual text*
 
-> git log -L <start>,<end>:file
+> git log -L [start],[end]:file
 
 *Shows commits that affected the specified line range of the specified file (with respect to present file line numbers)*
 
-> git log --diff-filter [A|D|M|...]
+> git log --diff-filter [A,D,M, ...]
 
 *See commits that affected files in a particular way (ie, added a file, modified, deleted, etc)*
 
