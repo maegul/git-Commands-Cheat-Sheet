@@ -1,8 +1,5 @@
-Hello WORLD ... do you hear me!!!
-
 
 # Git Cheat Sheet
-
 <!-- MarkdownTOC -->
 
 1. [Role Playing Git](#role-playing-git)
@@ -22,6 +19,9 @@ Hello WORLD ... do you hear me!!!
 	1. [Syncing with GitHub](#syncing-with-github)
 
 <!-- /MarkdownTOC -->
+
+
+
 
 ## Role Playing Git
 
@@ -254,10 +254,12 @@ _Only works for changes to files that have previously been added.  If you want t
 **See the log**
 
 > git log
+
 _shows captain’s log activity_
 
 
 > git log --oneline 
+
 _Show the git log in a more concise form._
 
 
