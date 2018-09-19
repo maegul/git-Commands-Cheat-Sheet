@@ -7,6 +7,7 @@
 1. [General commands \(for UNIX\)](#general-commands-for-unix)
 1. [Git commands](#git-commands)
 	1. [Help](#help)
+	1. [Using the Reader \(called less\)](#using-the-reader-called-less)
 	1. [Setting up your local git program](#setting-up-your-local-git-program)
 	1. [Starting a Git Repository](#starting-a-git-repository)
 	1. [Adding files and Committing Changes](#adding-files-and-committing-changes)
@@ -119,7 +120,12 @@ How you put something in your diary - a single diary entry
 
 ## General commands (for UNIX)
 
+**Help or Manual**
+
+> man [command]
+
 **List**
+
 > ls 
 
 _List what is here_
@@ -184,11 +190,50 @@ _Using the "-r" flag is necessary for directories_
 
 > git help commit
 
-**Look up teh glossary**
+**Look up General Help**
+
+> git help -a
+
+*list all subcommands.  Useful for when you can't quite remember which command you want to use.*
+
+> git help -g
+
+*list general guides including a tutorial and suggested workflows*
 
 > git help glossary
 
-*Search for a term by pressing "/" then your word, and enter.  Go to each find with "n" or "N" to go backwards.*
+*Search for a term by pressing "/" then your word, and enter.  Go to each find with "n" or "N" to go backwards.  See Using the Reader (less) for more.*
+
+### Using the Reader (called less)
+
+The above help commands automatically use a reading app for the terminal called `less`.  To navigate and search the file you've just opened, the following commands will be helpful.
+
+
+**Getting Help**
+
+key or command | action
+---            | ---
+h              | read help file
+
+**Moving around**
+
+key or command | action
+---            | ---
+j              | 1 line down
+k              | 1 line up
+d              | 1/2 window down
+u              | 1/2 window up
+G              | bottom of file
+g              | top of file
+
+**Searching**
+
+key or command | action
+---            | ---
+/[text]        | search for text in file (hit enter to search)
+n              | scroll to next hit
+N              | scroll to previous hit
+
 
 ### Setting up your local git program
 
@@ -211,6 +256,31 @@ _Create a config file in your home directory_
 [Quick Guide](https://help.github.com/articles/associating-text-editors-with-git/)
 
 > git config --global core.editor "atom --wait"
+
+**Add Aliases**
+
+Aliases are sub-commands of your own making which run a custom, and often long, git command that you define.
+
+Useful for making short versions of common commands, or for saving long complicated commands on speed dial for quick recall.
+
+> git config --global alias.quick_commit "commit -a -m "whatever, get it done!"
+
+Now, `git quick_commit` will run the above command.
+
+*Notice the lack of a git in the quotation marks*
+
+**Listing All Configuration Options**
+
+> git config --global -l
+
+**Editing Config File**
+
+> git config --global -e
+
+**An Alias for listing all aliases**
+
+> git config --global alias.alias "config --global --get-regexp alias"
+
 
 
 ### Starting a Git Repository
